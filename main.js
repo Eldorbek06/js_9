@@ -42,7 +42,7 @@
 // }
 
 // arr.filter(item => {
-//     if (item.completed === false) {
+//     if (!item.completed) {
 //         a.arr.push(item)
 //     } else {
 //         b.arr.push(item)
@@ -98,17 +98,11 @@
 // let other = []
 
 // users.filter(item => {
-//     let eMailEnding = item.email.slice(item.email.search('@'))
+//     let eMailEnding = item.email.split('.').at(-1)
 
-//     if(eMailEnding.includes('org')){
-//         emails.org.push(item)
-//     }
-//     if(eMailEnding.includes('net')){
-//         emails.net.push(item)
-//     }
-//     if(eMailEnding.includes('info')){
-//         emails.info.push(item)
-//     } else{
+//  if(emails[eMailEnding]){
+//         emails[eMailEnding].push(item)
+//     } else {
 //         other.push(item)
 //     }
 // })
